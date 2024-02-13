@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="gaelic">
+
+    {{ partial "header.html" . }}
+  
+  <!-- Sections -->
+  <div class="item-page">
+      {{partial "home/section-1.html" . }}
+      {{partial "home/section-2.html" . }}
+      {{partial "home/section-3.html" . }}
+      {{partial "home/section-4.html" . }}
+      {{partial "home/section-5.html" . }}
+      {{partial "home/section-6.html" . }}
+      {{partial "home/section-7.html" . }}
+      {{/*  {{partial "home/section-8.html" . }}  */}}
+</div>
+  <!-- End of sections -->
+
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>

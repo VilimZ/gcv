@@ -1,2 +1,40 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+{{/* <h1>{{ site.Title }}</h1>
+{{ partial "menu.html" (dict "menuID" "main" "page" .) }} */}}
+
+
+<div id="DynabicMenuInnerDiv">
+    <div class="topheader gaelicv1">
+        <div class="topsection topsection-panel">
+            <button type="button" class="togglebtn" id="mobile-button"> <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <div class="venturelogo"><a href="https://gaeliccemeteryvineyard.com/" class="gaelic"><span
+                        class="font-0">Gaelic</span></a></div>
+                        <div class="menuitems">
+                            <ul class="topheadermenus">
+                              {{ range .Site.Menus.nav }}
+                              <li><a href="{{ .URL }}" class="mobileanchor" >{{ .Name }}</a>
+                                
+                                {{ if .HasChildren }}
+                                {{/*  <span class="" for="{{ .Name }}"></span>  */}}
+                                <ul class="width220">
+                                  {{ range .Children }}
+                                  <li>
+                                    <a href="{{ .URL }}" >{{ .Name }}</a>
+                                  </li>
+                                  {{ end }}
+                                </ul>
+                                {{ end }}
+                              </li>
+                              {{ end }}
+                            </ul>
+                          </div>
+            <li style="list-style:none; vertical-align:middle; padding-top:19px; text-align:right; "><a
+                    href="javascript:;"
+                    style="vertical-align:35%; text-align:right; color:white; font-size:0.75em; pointer-events: none; margin-right:10px"
+                    class="hidden-sm-xs">Free Shipping</a> <a href="https://purchase.gaeliccemeteryvineyard.com/cart"
+                    em="" class="fa fa-shopping-cart hidden-sm-xs"
+                    style="margin-bottom:-50px; text-align:right; font-size:1.5em; color:white; background-color: unset !important;">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+        </div>
+    </div>
+</div>

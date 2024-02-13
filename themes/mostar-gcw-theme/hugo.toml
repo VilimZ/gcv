@@ -2,22 +2,298 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+################################# Menu Section ########################################
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+                                         ## Wines ##             
+[menu]
+[[menu.nav]]
+  identifier = 'wines'
+  name = 'Wines'
+  url = 'https://wines.gaeliccemeteryvineyard.com/'
+  weight = 5
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2020 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2020'
+  weight = 10
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2019 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2019'
+  weight = 20
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'    
+[[menu.nav]]
+  name = '2018 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2018'
+  weight = 30
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'    
+[[menu.nav]]
+  name = '2017 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2017'
+  weight = 40
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external' 
+[[menu.nav]]
+  name = '2016 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2016'
+  weight = 50
+  parent = 'wines'  
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2015 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2015'
+  weight = 60
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2014 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2014'
+  weight = 70
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2013 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2013'
+  weight = 80
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2012 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2012'
+  weight = 90
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2011 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2011'
+  weight = 100
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2010 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2010'
+  weight = 110
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2009 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2009'
+  weight = 120
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2008 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2008'
+  weight = 130
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  name = '2007 Vintage'
+  url = 'https://wines.gaeliccemeteryvineyard.com/2007'
+  weight = 140
+  parent = 'wines'
+  [menu.nav.params]
+    rel = 'external'
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
 
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
+                                           ## Purchase ##
+[[menu.nav]]
+  identifier = 'purchase'
+  name = 'Purchase'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/'
+  weight = 200
+   [menu.nav.params]
+    rel = 'external'   
+[[menu.nav]]
+  identifier = 'bynow'
+  name = 'By Now'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/'
+  weight = 210
+  parent = 'purchase'
+  [menu.nav.params]
+    rel = 'external'                                            
+[[menu.nav]]
+  identifier = 'myaccount'
+  name = 'My Account'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/my-account/'
+  weight = 220
+  parent = 'purchase'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  identifier = 'policies'
+  name = 'Policies'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/policies/'
+  weight = 230
+  parent = 'purchase'
+  [menu.nav.params]
+    rel = 'external'    
+[[menu.nav]]
+  identifier = 'distributors'
+  name = 'Distributors'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/distributors/'
+  weight = 240
+  parent = 'purchase'
+  [menu.nav.params]
+    rel = 'external'    
+[[menu.nav]]
+  identifier = 'wholesalers'
+  name = 'Wholesalers'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/wholesalers/'
+  weight = 250
+  parent = 'purchase'
+  [menu.nav.params]
+    rel = 'external'    
+[[menu.nav]]
+  identifier = 'retailers'
+  name = 'Retailers'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/retailers/'
+  weight = 260
+  parent = 'purchase'
+  [menu.nav.params]
+    rel = 'external'   
+
+                 ###      Wine Club       ##
+
+[[menu.nav]]
+  identifier = 'wineclub'
+  name = 'Wineclub'
+  url = 'https://purchase.gaeliccemeteryvineyard.com/wine-club/'
+  weight = 270
+  [menu.nav.params]
+    rel = 'external'   
+
+      #########################             Brands       ####################
+      
+[[menu.nav]]
+  identifier = 'brands'
+  name = 'Brands'
+  url = 'https://brands.gaeliccemeteryvineyard.com/'
+  weight = 280
+   [menu.nav.params]
+    rel = 'external'           
+[[menu.nav]]
+  identifier = 'pirathon'
+  name = 'Pirathon'
+  url = 'https://brands.gaeliccemeteryvineyard.com/pirathon/'
+  weight = 290
+  parent = 'brands'
+  [menu.nav.params]
+    rel = 'external'   
+[[menu.nav]]
+  identifier = 'gaelic-cemetery'
+  name = 'Gaelic Cemetry Vineyard'
+  url = 'https://brands.gaeliccemeteryvineyard.com/gaelic-cemetery-vineyard/'
+  weight = 300
+  parent = 'brands'
+  [menu.nav.params]
+    rel = 'external'   
+[[menu.nav]]
+  identifier = 'lanzerac-country'
+  name = 'Lanzerac Country Eestate'
+  url = 'https://brands.gaeliccemeteryvineyard.com/lanzerac-country-estate/'
+  weight = 310
+  parent = 'brands'
+  [menu.nav.params]
+    rel = 'external'   
+
+                                        ##  Preoperties  ##
+
+[[menu.nav]]
+  identifier = 'properties'
+  name = 'Properties'
+  url = 'https://properties.gaeliccemeteryvineyard.com/'
+  weight = 320
+   [menu.nav.params]
+    rel = 'external'                                        
+[[menu.nav]]
+  identifier = 'pirathon-winery'
+  name = 'Pirathon Winery'
+  url = 'https://properties.gaeliccemeteryvineyard.com/pirathon-winery'
+  weight = 330
+  parent = 'properties'
+  [menu.nav.params]
+    rel = 'external'         
+[[menu.nav]]
+  identifier = 'pirathon-vineyard'
+  name = 'Pirathon Vineyard'
+  url = 'https://properties.gaeliccemeteryvineyard.com/pirathon-vineyard'
+  weight = 340
+  parent = 'properties'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  identifier = 'gaelic-cemetery-vineyard'
+  name = 'Gaelic Cemetry Vineyard'
+  url = 'https://properties.gaeliccemeteryvineyard.com/gaelic-cemetery-vineyard'
+  weight = 350
+  parent = 'properties'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  identifier = 'lanzerac-country-estate'
+  name = 'Lanzerac Country Eestate'
+  url = 'https://properties.gaeliccemeteryvineyard.com/lanzerac-country-estate'
+  weight = 360
+  parent = 'properties'
+  [menu.nav.params]
+    rel = 'external'
+
+                            ##   About   ##
+
+[[menu.nav]]
+  identifier = 'about'
+  name = 'About'
+  url = 'https://about.gaeliccemeteryvineyard.com/'
+  weight = 370
+   [menu.nav.params]
+    rel = 'external'  
+[[menu.nav]]
+  identifier = 'about-us'
+  name = 'About Us'
+  url = 'https://about.gaeliccemeteryvineyard.com/'
+  weight = 380
+  parent = 'about'
+  [menu.nav.params]
+    rel = 'external'
+[[menu.nav]]
+  identifier = 'contact'
+  name = 'Contact'
+  url = 'https://about.gaeliccemeteryvineyard.com/contact'
+  weight = 390
+  parent = 'about'
+  [menu.nav.params]
+    rel = 'external'    
+[[menu.nav]]
+  identifier = 'blog'
+  name = 'Blog'
+  url = 'https://blog.gaeliccemeteryvineyard.com/'
+  weight = 400
+  parent = 'about'
+  [menu.nav.params]
+    rel = 'external'  
+[[menu.nav]]
+  identifier = 'legal'
+  name = 'Legal'
+  url = 'https://about.gaeliccemeteryvineyard.com/legal'
+  weight = 410
+  parent = 'about'
+  [menu.nav.params]
+    rel = 'external'        
