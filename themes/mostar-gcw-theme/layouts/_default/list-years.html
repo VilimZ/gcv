@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<div class="header1 header2 header4 minify-header container-fluid static_header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8" style="text-align: center;">
+        <h1><strong>{{ .Page.Params.vintagetitle }}</strong></h1>
+        <h4>{{ .Page.Params.vintagedesc }}</h4>
+        <h4>In this vintage Gaelic Cemetery Vineyard offers an outstanding Shiraz.</h4>
+        <a class="btn btn-warning btn-lg" href="https://purchase.gaeliccemeteryvineyard.com"><em
+            class="fa fa-shopping-cart">&nbsp;</em> Sold Out</a>
+      </div>
+      <div class="col-md-4 tc"><img class="col-xs-12" src="/templates/gaelic/images/Gaelic_Cemetery_Thistle.png"
+          alt="Gaelic Cemetery Vineyard"></div>
+      <!--/col6 -->
+    </div>
+    <!--/row -->
+  </div>
+  <!--/container -->
+</div>
+{{ .Content }}
+{{ range .Pages }}
+<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+{{ .Summary }}
+
+
+
+
+{{ end }}
+{{ end }}
