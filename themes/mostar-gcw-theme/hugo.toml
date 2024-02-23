@@ -99,7 +99,7 @@ title = 'My New Hugo Site'
     rel = 'external'
 [[menu.nav]]
   name = '2008 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2008'
+  url = '/wines/2008'
   weight = 130
   parent = 'wines'
   [menu.nav.params]

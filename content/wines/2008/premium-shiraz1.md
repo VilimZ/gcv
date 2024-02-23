@@ -1,13 +1,16 @@
+
 +++
-title = '2007 Premium Shiraz - Gaelic Cemetery Vineyard'
+year = '2008'
+title = '2008 Premium Shiraz - Gaelic Cemetery Vineyard'
 date = 2024-02-15T17:37:26+01:00
 draft = false
-wintage = '2007 GCV Premium Shiraz'
+vintagetitle = '2008 GCV Premium Shiraz'
 image = '/img/Gaelic_Cemetery_Thistle.png'
-wintagedesc = 'The 2007 GCV Premium Shiraz shows all the usual blackberry, star anise and ferrous characters that we have come to expect from this site.'
-wintagedesc2 = 'In this vintage Gaelic Cemetery Vineyard offers an outstanding Shiraz.'
+vintagedesc = 'The 2007 GCV Premium Shiraz shows all the usual blackberry, star anise and ferrous characters that we have come to expect from this site.'
+vintagedesc2 = 'In this vintage Gaelic Cemetery Vineyard offers an outstanding Shiraz.'
 imagemain = '/img/gaelic_premium_shiraz.png'
 maintitle = 'GCV Premium Shiraz'
+
 
 overview1 = 'The fruit for the 2007 GCV Premium Shiraz comes from the two oldest blocks of Shiraz on the vineyard. Varying percentages of both blocks make up the Premium depending on the year.'
 overviewpdf = 'https://library.conholdate.app/view/578HVoboa6I5qZyZl/gaelic-cemetery-shiraz-07-notes.pdf?preview=true.pdf'
@@ -39,7 +42,7 @@ testemonialonyears = 'The fruit for this comes from the two oldest blocks of Shi
 
 {{< wines/single/single-wine-header >}} 
 {{< wines/single/single-wine-content >}} 
-
+Archetypes wines
 
 
 

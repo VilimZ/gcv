@@ -131,7 +131,7 @@ tr.pir-tbl-row td { padding: 10px; border-bottom: solid rgb(215, 215, 215); }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open > .dropdown-toggle.btn-warning { color: rgb(255, 255, 255); background-color: rgb(190, 1, 22); border-color: rgb(165, 0, 19); }
 a { color: rgb(190, 1, 22); text-decoration: none; }
 a:hover, a:focus { color: rgb(165, 0, 19); }
-@font-face { font-family: icomoon; src: url("/templates/gaelic/fonts/icomoon.ttf?24ngqi") format("truetype"), url("/templates/gaelic/fonts/icomoon.woff?24ngqi") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: icomoon; src: url("/fonts/icomoon.ttf?24ngqi") format("truetype"), url("/fonts/icomoon.woff?24ngqi") format("woff"); font-weight: normal; font-style: normal; }
 [class^="icon-"], [class*=" icon-"] { speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; font-family: icomoon !important; }
 .icon-barrel::before { content: ""; }
 .icon-bottle::before { content: ""; }

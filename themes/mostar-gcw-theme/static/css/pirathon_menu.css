@@ -1,0 +1,77 @@
+#DynabicMenuInnerDiv .topheadermenus li a:hover {
+	background: #BE0116;
+	color: #FFF
+}
+
+#DynabicMenuInnerDiv .topheadermenus li a:focus {
+	background: #BE0116;
+	color: #FFF
+}
+
+#DynabicMenuInnerDiv .topheadermenus li a:active {
+	background: #BE0116;
+	color: #FFF
+}
+
+#DynabicMenuInnerDiv .topheadermenus li li:focus {
+	background: #BE0116;
+	color: #FFF
+}
+
+#DynabicMenuInnerDiv .topurlink.moblink:hover {
+	background: #BE0116;
+	color: #FFF;
+}
+@media (max-width: 668px){
+#DynabicMenuInnerDiv .venturelogo a {
+    width: 260px!important;
+    background-position: 10px 4px!important;
+}
+}}
+@media (max-width: 335px){
+
+#DynabicMenuInnerDiv .venturelogo a {
+    width: 190px!important;
+    height: 36px!important;
+    background-position: 10px 8px!important;
+}}
+@media (max-width: 768px){
+#DynabicMenuFooter .socialicon ul li {
+    width: 25%!important;
+    min-height: 40px;
+    float: none;
+    display: inline-block;
+}}
+@media (max-width: 1024px){
+#DynabicMenuFooter .footer2anchor, #DynabicMenuFooter .footer2col p {
+    float: none !important;
+    text-align: center;
+    line-height: 52px;
+    background: #000 !important;
+    width: 100%;
+    display: table;
+    clear: both;
+}}
+#DynabicMenuFooter .footer2col a:hover, #DynabicMenuFooter .bottomenuitems ul li a:hover {
+    color: #be0116!important;
+    text-decoration: none;
+}
+
+#DynabicMenuInnerDiv .venturelogo a.pirathonv2 {
+    background-image:url(https://cms.admin.containerize.com/templates/pirathonv2.0/images/pirathon-logo.png);
+    background-size: 100%;
+}
+
+#DynabicMenuInnerDiv .topheader.pirathonv2 .userlogstatus {
+    width: 220px;
+    float: right;
+}
+.hidden-sm-xs {
+  display: none;
+}
+
+@media screen and (min-width: 450px) {
+.hidden-sm-xs {
+    display: inline;
+  }
+}
