@@ -1,10 +1,10 @@
 
 +++
 year = '2007'
-title = '2008 Premium Shiraz - Gaelic Cemetery Vineyard'
+title = '2007 Premium Shiraz - Gaelic Cemetery Vineyard'
 date = 2024-02-15T17:37:26+01:00
 draft = false
-vintagetitle = '2008 GCV Premium Shiraz'
+vintagetitle = '2007 GCV Premium Shiraz'
 image = '/img/Gaelic_Cemetery_Thistle.png'
 vintagedesc = 'The 2007 GCV Premium Shiraz shows all the usual blackberry, star anise and ferrous characters that we have come to expect from this site.'
 vintagedesc2 = 'In this vintage Gaelic Cemetery Vineyard offers an outstanding Shiraz.'
