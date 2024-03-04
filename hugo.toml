@@ -1,4 +1,4 @@
-baseURL = 'gcv/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Gaelic Cemetery Vineyard - Clare Valley Wines'
 theme = 'mostar-gcw-theme'
