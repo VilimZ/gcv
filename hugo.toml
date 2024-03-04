@@ -1,4 +1,5 @@
-baseURL = 'https://vilimz.github.io/gcv/'
+baseURL = '/'
+relURL = ''
 languageCode = 'en-us'
 title = 'Gaelic Cemetery Vineyard - Clare Valley Wines'
 theme = 'mostar-gcw-theme'
