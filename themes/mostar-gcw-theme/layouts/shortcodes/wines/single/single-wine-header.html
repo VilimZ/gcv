@@ -1,18 +1,21 @@
 
 
 <div class="container-fluid static_header header1 header2 header4 minify-header pir-zoom">
-    <div class="container"><h6>single-wine-header.html</h6>
+    <div class="container">
+        {{/*  <h6>single-wine-header.html</h6>  */}}
+        <h6 id="productId" style="visibility: hidden;">{{ .Page.Params.productId }}</h6>
         <div class="row">
             <div class="col-md-8">
+
+                <script type="application/ld+json">{"@context":"https://schema.org/","@type":"Product","name":"2015 GCV Celtic Farm Shiraz Cabernet","image":"https://wines.gaeliccemeteryvineyard.com/templates/gaelic/images/gaelic_shz_cab_small.png","description":"The GCV Celtic Farm Shiraz Cabernet is a really attractive Clare red blend which will repay medium term cellaring","brand":"Gaelic Cemetery Vineyard","offers":{"@type":"Offer","url":"https://wines.gaeliccemeteryvineyard.com/2015/celtic-farm-shiraz-cabernet","priceCurrency":"AUD","price":"28","priceValidUntil":"2022-06-12","availability":"https://schema.org/OutOfStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.75","ratingCount":"3"},"review":{"@type":"Review","name":"James Halliday, The Wine Companion","reviewBody":"Deep crimson-purple: combinations of some or all of these varieties have always prospered in the Clare Valley, Wendouree and Leasingham Bin 56 being examples. This ticks the boxes set by those great wines. Deep crimson-purple, red and black berry fruits hold hands, encouraged by ripe tannins. 93/100 points.","author":{"@type":"Person","name":""}}}</script>
            
                 <h1><strong>{{ .Page.Params.vintagetitle }} </strong></h1>
                 <h4>{{ .Page.Params.vintagedesc }}</h4>
                 <h4>{{ .Page.Params.vintagedesc2 }}</h4>
-                <a class="btn btn-warning btn-lg" href="https://purchase.gaeliccemeteryvineyard.com/"><em
-                        class="fa fa-shopping-cart">&nbsp;</em> Buy Now</a>
+                <div id="buttonContainer"></div>    
             </div>
-            <div class="col-md-4 tc"><a class="pir-thumb"
-                    href="/img/gaelic_premium_shiraz.png"><img class=" col-xs-12"
+            <div class="col-md-4 tc"><a id="urlId" class="pir-thumb"
+                    href="{{ .Page.Params.purchaseurl }}"><img class=" col-xs-12"
                         src="{{ .Page.Params.imagemain }}" alt="GCV Premium Shiraz"></a></div>
             <!--/col6 -->
         </div>

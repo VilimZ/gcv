@@ -9,69 +9,69 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'wines'
   name = 'Wines'
-  url = 'https://wines.gaeliccemeteryvineyard.com/'
+  url = '/wines/'
   weight = 5
   [menu.nav.params]
     rel = 'external'
 [[menu.nav]]
   name = '2020 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2020'
+  url = '/wines/2020'
   weight = 10
   parent = 'wines'
   [menu.nav.params]
     rel = 'external'
 [[menu.nav]]
   name = '2019 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2019'
+  url = '/wines/2019'
   weight = 20
   parent = 'wines'
   [menu.nav.params]
     rel = 'external'    
 [[menu.nav]]
   name = '2018 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2018'
+  url = '/wines/2018'
   weight = 30
   parent = 'wines'
   [menu.nav.params]
     rel = 'external'    
 [[menu.nav]]
   name = '2017 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2017'
+  url = '/wines/2017'
   weight = 40
   parent = 'wines'
   [menu.nav.params]
     rel = 'external' 
 [[menu.nav]]
   name = '2016 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2016'
+  url = '/wines/2016'
   weight = 50
   parent = 'wines'  
   [menu.nav.params]
     rel = 'external'
 [[menu.nav]]
   name = '2015 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2015'
+  url = '/wines/2015'
   weight = 60
   parent = 'wines'
   [menu.nav.params]
     rel = 'external'
 [[menu.nav]]
   name = '2014 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2014'
+  url = '/wines/2014'
   weight = 70
   parent = 'wines'
   [menu.nav.params]
     rel = 'external'
 [[menu.nav]]
   name = '2013 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2013'
+  url = '/wines/2013'
   weight = 80
   parent = 'wines'
   [menu.nav.params]
     rel = 'external'
 [[menu.nav]]
   name = '2012 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2012'
+  url = '/wines/2012'
   weight = 90
   parent = 'wines'
   [menu.nav.params]
@@ -85,7 +85,7 @@ title = 'My New Hugo Site'
     rel = 'external'
 [[menu.nav]]
   name = '2010 Vintage'
-  url = 'https://wines.gaeliccemeteryvineyard.com/2010'
+  url = '/wines/2010'
   weight = 110
   parent = 'wines'
   [menu.nav.params]
@@ -185,14 +185,14 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'brands'
   name = 'Brands'
-  url = 'https://brands.gaeliccemeteryvineyard.com/'
+  url = '/brands/'
   weight = 280
    [menu.nav.params]
     rel = 'external'           
 [[menu.nav]]
   identifier = 'pirathon'
   name = 'Pirathon'
-  url = 'https://brands.gaeliccemeteryvineyard.com/pirathon/'
+  url = '/brands/pirathon/'
   weight = 290
   parent = 'brands'
   [menu.nav.params]
@@ -200,7 +200,7 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'gaelic-cemetery'
   name = 'Gaelic Cemetry Vineyard'
-  url = 'https://brands.gaeliccemeteryvineyard.com/gaelic-cemetery-vineyard/'
+  url = '/brands/gaelic-cemetery-vineyard/'
   weight = 300
   parent = 'brands'
   [menu.nav.params]
@@ -208,7 +208,7 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'lanzerac-country'
   name = 'Lanzerac Country Eestate'
-  url = 'https://brands.gaeliccemeteryvineyard.com/lanzerac-country-estate/'
+  url = '/brands/lanzerac-country-estate/'
   weight = 310
   parent = 'brands'
   [menu.nav.params]
@@ -219,14 +219,14 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'properties'
   name = 'Properties'
-  url = 'https://properties.gaeliccemeteryvineyard.com/'
+  url = '/properties/'
   weight = 320
    [menu.nav.params]
     rel = 'external'                                        
 [[menu.nav]]
   identifier = 'pirathon-winery'
   name = 'Pirathon Winery'
-  url = 'https://properties.gaeliccemeteryvineyard.com/pirathon-winery'
+  url = '/properties/pirathon-winery'
   weight = 330
   parent = 'properties'
   [menu.nav.params]
@@ -234,7 +234,7 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'pirathon-vineyard'
   name = 'Pirathon Vineyard'
-  url = 'https://properties.gaeliccemeteryvineyard.com/pirathon-vineyard'
+  url = '/properties/pirathon-vineyard'
   weight = 340
   parent = 'properties'
   [menu.nav.params]
@@ -242,7 +242,7 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'gaelic-cemetery-vineyard'
   name = 'Gaelic Cemetry Vineyard'
-  url = 'https://properties.gaeliccemeteryvineyard.com/gaelic-cemetery-vineyard'
+  url = '/properties/gaelic-cemetery-vineyard'
   weight = 350
   parent = 'properties'
   [menu.nav.params]
@@ -250,7 +250,7 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'lanzerac-country-estate'
   name = 'Lanzerac Country Eestate'
-  url = 'https://properties.gaeliccemeteryvineyard.com/lanzerac-country-estate'
+  url = '/properties/lanzerac-country-estate'
   weight = 360
   parent = 'properties'
   [menu.nav.params]
@@ -261,14 +261,14 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'about'
   name = 'About'
-  url = 'https://about.gaeliccemeteryvineyard.com/'
+  url = '/about/'
   weight = 370
    [menu.nav.params]
     rel = 'external'  
 [[menu.nav]]
   identifier = 'about-us'
   name = 'About Us'
-  url = 'https://about.gaeliccemeteryvineyard.com/'
+  url = '/about/'
   weight = 380
   parent = 'about'
   [menu.nav.params]
@@ -276,7 +276,7 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'contact'
   name = 'Contact'
-  url = 'https://about.gaeliccemeteryvineyard.com/contact'
+  url = '/about/contact'
   weight = 390
   parent = 'about'
   [menu.nav.params]
@@ -292,7 +292,7 @@ title = 'My New Hugo Site'
 [[menu.nav]]
   identifier = 'legal'
   name = 'Legal'
-  url = 'https://about.gaeliccemeteryvineyard.com/legal'
+  url = '/about/legal'
   weight = 410
   parent = 'about'
   [menu.nav.params]

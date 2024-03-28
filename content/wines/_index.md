@@ -1,5 +1,6 @@
 +++
-title = '2008 Vintage - Wines - Gaelic Cemetery Vineyard'
+layout = 'list-main'
+title = 'Wine'
 vintagetitle = '2007 Vintage'
 vintagedesc = 'In the 2007 vintage most of South Eastern Australia was affected by a severe drought with crop levels being reduced significantly in most region.'
 

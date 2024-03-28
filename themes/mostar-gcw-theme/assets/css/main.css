@@ -1,0 +1,99 @@
+ p.text-left {
+    /* margin: 0px 0px 35px 0px; */
+ }
+
+ span.prod-btn {
+    display: block;
+ }
+
+ /*  */
+
+ .cloudtablesmall {
+   margin: 10px 20px 0 0
+}
+
+.cloudtablesmall td:first-child,.cloudtablesmall th:first-child {
+   text-align: left
+}
+
+.cloudtablesmall tr {
+   background: #f7f7f7;
+   border: 1px solid #ccc
+}
+
+.cloudtablesmall tr:hover {
+   background: #ececec
+}
+
+.cloudtablesmall th {
+   color: #FFF;
+   background: #1a89d0;
+   vertical-align: text-top
+}
+
+.cloudtablesmall td {
+   color: #333
+}
+
+.cloudtablesmall td em {
+   font-size: 24px;
+   font-weight: 600;
+   font-style: normal
+}
+
+.cloudtablesmall td:nth-child(3),.cloudtablesmall th:last-child {
+   white-space: nowrap
+}
+
+.cloudtablesmall td strong {
+   font-size: 14px
+}
+
+@media (max-width: 555px) {
+   .cloudtable tr:last-child .pricescript {
+       font-size:24px!important
+   }
+
+   .rwd-table input[type=text] {
+       width: 45%
+   }
+
+   .rwd-table #txtTotalPrice {
+       text-align: right
+   }
+
+   .cloudpricingfaq .col-lg-1 {
+       display: none
+   }
+
+   .cloudtablesmall td:nth-child(3),.cloudtablesmall th:last-child {
+       white-space: normal!important
+   }
+
+}
+   /* 
+   .left {
+      float: left;
+      width: 250px;
+   
+      margin-top: 100px;
+      padding: 0 1em;
+   }
+   
+   .right {
+      float: left;
+      width: 250px;
+      margin-left: 20px;
+   
+      padding: 0 1em;
+   }
+   
+   .left.float {
+      position: fixed;
+      top: 20px;
+      margin-top: 0;
+   }
+   
+   .right.float {
+      margin-left: 220px;
+   } */

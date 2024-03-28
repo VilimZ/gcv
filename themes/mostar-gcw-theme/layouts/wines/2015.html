@@ -1,0 +1,65 @@
+
+{{ define "main" }}
+
+<div class="header1 header2 header4 minify-header container-fluid static_header">
+  <div class="container">
+    {{/*  <h6>list.html (wines/2015)</h6>  */}}
+    <div class="row">
+      <div class="col-md-8" style="text-align: center;">
+        <h1><strong>{{ .Page.Params.vintagetitle }}</strong></h1>
+        <h4>{{ .Page.Params.vintagedesc }}</h4>
+        <h4>{{ .Page.Params.vintagedesc2 }}</h4>
+        <a class="btn btn-warning btn-lg" href="https://purchase.gaeliccemeteryvineyard.com"><em
+            class="fa fa-shopping-cart">&nbsp;</em> Sold Out</a>
+      </div>
+      <div class="col-md-4 tc"><img class="col-xs-12" src="{{ "./img/" | relURL }}Gaelic_Cemetery_Thistle.png"
+          alt="Gaelic Cemetery Vineyard"></div>
+      <!--/col6 -->
+    </div>
+    <!--/row -->
+  </div>
+  <!--/container -->
+</div>
+
+
+
+{{ $edityear := .Site.Params.yearofediting }}
+
+{{ $posts := (where .Site.RegularPages "Params.year" "=="  "2015" ) }}
+{{ $postCount := len $posts }}
+
+
+<div class="container">{{/* {{println $postCount "X"  }} */}}
+  <div class="row">
+    {{ .Content }}
+    {{ range .Pages }}
+    <h2><a href=""></a></h2>
+    <div {{ if eq $postCount 1 }} class="col-lg-12 prod-col" {{ else if eq $postCount 2 }} class="col-lg-6 prod-col" {{ else if eq $postCount 4 }} class="col-lg-6 prod-col" {{
+      else }} class="col-lg-4 prod-col" {{ end }}>
+
+      <a class="pir-link" href="{{ .RelPermalink }}"> <img class="pir-range" src="{{ .Params.imagemain }}"
+          alt="GCV Premium Shiraz" height="300"></a>
+      <h3 class="text-center">{{ .Params.maintitle }}</h3>
+      <p class="text-left">{{ .Params.testemonialonyears }}</p>
+      <p>&nbsp;</p>
+      <div class="text-center"><span class="prod-btn"><a class="btn btn-primary prod-btn-wd"
+            href="{{ .RelPermalink }}">Read More</a></span></div>
+    </div>
+
+    {{ end }}
+
+  </div>
+</div>
+
+<div class="container-fluid bg-white singleproduct">&nbsp;&nbsp;
+  <div class="container">
+    <div class="row">
+      <h2 class="h2title">Vintage Notes</h2>
+      <h3>Growing Season</h3>
+      <p>{{ .Page.Params.vintagenotes }}</p>
+    </div>
+    <div class="row">&nbsp;</div>
+  </div>
+</div>
+
+{{ end }}

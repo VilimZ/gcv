@@ -1,0 +1,58 @@
+
++++
+year = '2014'
+
+productId = '240'
+productprice = '$28'
+
+title = '2014 Premium Shiraz - Gaelic Cemetery Vineyard'
+date = 2024-02-15T17:37:26+01:00
+draft = false
+vintagetitle = 'GCV Celtic Farm Riesling 2014'
+image = '/img/Gaelic_Cemetery_Thistle.png'
+vintagedesc = 'The 2014 GCV Celtic Farm Riesling comes from three different blocks on the vineyard and our intention is to make a wine in the modern Australian Riesling style – crisp, dry and fresh.'
+vintagedesc2 = 'Citrus characters of lemon and lime on full display along with some attractive floral notes.'
+imagemain = '/img/Gaelic-Cemetery-Celtic-Farm-1.png'
+maintitle = 'GCV Celtic Farm Riesling 2014'
+
+
+overview1 = 'The "entry level" Riesling but one that seriously over-delivers. Purity and flavor are abundant and it makes for sensational value.'
+overviewpdf = 'https://library.conholdate.app/view/578HVoboa6I5qZyZl/gaelic-cemetery-shiraz-07-notes.pdf?preview=true.pdf'
+
+tastingnotes = 'Pale green in appearance with typical Clare Valley Riesling citrus characters of lemon and lime on full display along with some attractive floral notes. The palate is crisp, dry and fresh; the balanced acidity ensuring a bright, clean finish. Great with any seafood – but the match with freshly shucked oysters is hard to go past.'
+
+regions = '100% Clare Valley, South Australia.'
+regiondesc = "One of Australia's oldest and most premium wine regions, famous all around the world for it's Riesling and Shiraz wines in particular"
+
+varietal = '100% Riesling'
+
+vineyard = 'Single vineyard'
+
+whentodrink = 'Enjoy now or cellar for 5-10 years'
+alcohol = '12.0% Alcohol'
+
+
+growingseason = 'The 2014 vintage was shaped by a cool winter with average rainfall followed by a dry and quite warm spring. Budburst was a touch earlier than normal due to the warmer conditions – maybe a week earlier than what is considered average. Summer was very warm to very hot. January was particularly hot at times - only broken up by a week of cooler weather in the third week. Thankfully the heat dissipated mid February and much of the fruit was able to ripen in the cooler months of March & April.'
+
+winemaking = 'The grapes for this wine were machine harvested in the cool, early hours of the morning, transported to the winery to be crushed, chilled and pressed as soon as possible prior to the juice being clarified by cold settling. It was then inoculated with a pure yeast culture, with fermentation carried out in stainless steel temperature controlled tanks for on average 25-30 days. The wine was fined, stabilised then filtered prior to bottling.'
+
+reviews = "Don't just take our word for it. See what customers and critics are saying about the GCV Celtic Farm Riesling."
+
+testemonials = 'The less expensive, more ready to rumble little brother of the Gaelic Cemetery Riesling. More weight and less purity than its big brother, but more open and affable as a youngster. There’s a slight chalkiness to the texture and a twist of lime rind bitterness on the finish along with lime, lemon, apple and bathroom florals. Clean acidity and juicy sweetness makes this a very good drink. 94/100 points'
+
+testemonialsauthor = 'Gary Walsh'
+
+testemonialonyears = 'The fruit for this comes from the two oldest blocks of Shiraz on the vineyard. Varying percentages of both blocks make up the Premium depending on the year. Incredibly deep red, almost black in colour, this wine shows all the usual blackberry, star anise and ferrous characters that we have come to expect.'
+
++++
+
+{{< wines/single/single-wine-header >}} 
+{{< wines/single/single-wine-content >}} 
+
+
+
+
+
+
+
+

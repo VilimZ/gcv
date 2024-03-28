@@ -1,11 +1,13 @@
 +++
-type = 'list'
+layout = '2008'
+type = '2008'
 title = '2009 Vintage - Wines - Gaelic Cemetery Vineyard'
 vintagetitle = '2009 Vintage'
-vintagedesc = 'In the 2009 vintage most of South Eastern Australia was affected by a severe drought with crop levels being reduced significantly in most region.'
+vintagedesc = 'The 2009 vintage saw a welcome return to normal seasonal conditions for the Clare Valley.'
+vintagedesc2 = 'In this vintage Gaelic Cemetery Vineyard offers an outstanding Shiraz.'
 
 
-vintagenotes = 'A warm, dry growing season meant the grapes accumulated sugar quite rapidly after verasion, so timing of harvest was crucial to making good wines. Those who got it right managed to make high quality wines of great colour and backbone that retained good levels of natural acidity as well as plenty of mid palate flavor.'
+vintagenotes = 'The 2009 vintage saw a welcome return to normal seasonal conditions for the Clare Valley. While most of South Eastern Australia was affected by the continuance of a severe drought with crop levels being reduced and devastating bushfires in Victoria creating havoc, thankfully South Australia and the Clare Valley was immune to all this. A mild summer allowed the grapes to ripen quite steadily and develop excellent flavour concentration while retaining good levels of natural acidity. 2009 has the potential to be one of the top 2 or 3 vintages of the last decade.'
 
 draft = false
 +++

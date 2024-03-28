@@ -4,9 +4,10 @@
     <div id="sticky1" class="stickytopheight">&nbsp;</div>
     <div id="sticky1" class="stickytopheight">&nbsp;</div>
     <div class="container">
-        <div class="row"><h6>single-wine-content.html</h6>
+        <div class="row">
+            {{/*  <h6>single-wine-content.html</h6>  */}}
             <div class="col-md-2 title2">
-                <h4><span class="spanclass"><img src="/img/Gaelic_Cemetery_Thistle_Small.png"
+                <h4><span class="spanclass"><img src="{{ "./img/" | relURL }}Gaelic_Cemetery_Thistle_Small.png"
                             alt="GCV Premium Shiraz"></span>{{ .Page.Params.vintagetitle}}<small></small></h4>
             </div>
             <!--/col3 -->
@@ -44,9 +45,15 @@
         <div class="item">
             <h2 class="h2title">Overview</h2>
             <p>{{ .Page.Params.overview1}}</p>
-            <p class="text-center"><a class="btn btn-primary"
+            {{ if eq .Page.Params.overviewpdf "" }}
+            <!-- parameter set to false -->
+            {{ else }}
+            <p class="text-center">
+                <a class="btn btn-primary"
                     href="{{ .Page.Params.overviewpdf }}"
-                    target="_blank" rel="noopener noreferrer">View Fact Sheet</a></p>
+                    target="_blank" rel="noopener noreferrer">View Fact Sheet</a>
+            </p>
+            {{ end }}
         </div>
     </div>
 </div>
@@ -112,13 +119,17 @@
             </div>
         </div>
     </div>
+
+    {{ if eq .Page.Params.testemonials "" }}
+    <!-- parameter set to false -->
+    {{ else }}
+    <!-- parameter not set to false -->
     <!-- Testimonials -->
     <div class="container-fluid testimonials-resources bg-gray pir-diagram">
         <div class="row">
             <div class="container tc"><a id="reviews" class="anchor" name="reviews"></a>
                 <h2 class="h2title">Reviews</h2>
-                <p>Don't just take our word for it. See what&nbsp;customers and critics are saying about the GCV Premium
-                    Shiraz.</p>
+                <p>{{ .Page.Params.reviews }}</p>
                 <div class="spacer3">&nbsp;</div>
                 <div class="testimonials-msg">
                     <div id="testimonialcarousel" class="carousel slide" data-pause="true" data-keyboard="false"
@@ -133,4 +144,8 @@
             </div>
         </div>
     </div>
+
+    {{ end }}
+
+
 </div>

@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+{{ partial "wines/wine-list-header" . }}
+
+<div class="container">&nbsp;</div>
+
+{{ $edityear := .Site.Params.yearofediting }}
+{{ $posts := (where .Site.RegularPages "Params.year" "==" .Params.type ) }}
+{{ $postCount := len $posts }}
+<div class="container">
+  {{ if le $postCount 3 }}
+  <div class="row">
+    {{ range $posts }}
+    <!-- Prikaz postova u jednom redu -->
+    <h6>---1 Rov.</h6>
+    {{ end }}
+  </div>
+  {{ else }}
+  {{/* {{ range first 3 $posts }} */}}
+  <!-- Prikaz prva tri posta u prvom redu -->
+  
+    <div class="row">
+      
+      {{ .Content }}
+      {{ range first 3 .Pages }}
+     
+      <div {{ if eq $postCount 1 }} class="col-lg-12 prod-col" {{ else if eq $postCount 2 }} class="col-lg-6 prod-col"
+        {{ else if eq $postCount 4 }} class="col-lg-6 prod-col" {{ else }} class="col-lg-4 prod-col" {{ end }}>
+
+        <a class="pir-link" href="{{ .RelPermalink }}"> <img class="pir-range" src="{{ .Params.imagemain }}"
+            alt="GCV Premium Shiraz" height="300"></a>
+        <h3 class="text-center">{{ .Params.maintitle }}</h3>
+        <p class="text-left">{{ .Params.testemonialonyears }}</p>
+        <p>&nbsp;</p>
+        {{/*  <h5>{{ .Params.productId }}</h5>  */}}
+
+          
+        <div id="price-container" class="text-center">
+          <p><span style="font-size: 18px;">{{ .Params.productprice }}</span><sup>/ bottle</sup></p>
+        </div>
+        
+        <div class="text-center"><span class="prod-btn"><a class="btn btn-primary prod-btn-wd"
+              href="{{ .RelPermalink }}">Read More</a></span></div>
+      </div>
+
+    
+      {{ end }}
+    </div>
+
+  
+  <div class="clearall">&nbsp;</div>
+  <div class="container">&nbsp;</div>
+
+  {{/* {{ range last 2 $posts }} */}}
+  <!-- Prikaz ostalih postova u drugom redu -->
+  <div class="container">
+    <div class="row">
+      {{ .Content }}
+      {{ range last 2 .Pages }} 
+ 
+      <div {{ if eq $postCount 1 }} class="col-lg-12 prod-col" {{ else if eq $postCount 2 }} class="col-lg-6 prod-col"
+        {{ else if eq $postCount 4 }} class="col-lg-6 prod-col" {{ else }} class="col-lg-4 prod-col" {{ end }}>
+
+        <a class="pir-link" href="{{ .RelPermalink }}"> <img class="pir-range" src="{{ .Params.imagemain }}"
+            alt="GCV Premium Shiraz" height="300"></a>
+        <h3 class="text-center">{{ .Params.maintitle }}</h3>
+        <p class="text-left">{{ .Params.testemonialonyears }}</p>
+        <p>&nbsp;</p>
+
+        <div id="price-container" class="text-center">
+          <p><span style="font-size: 18px;">{{ .Params.productprice }}</span><sup>/ bottle</sup></p>
+        </div>
+
+        <div class="text-center"><span class="prod-btn"><a class="btn btn-primary prod-btn-wd"
+              href="{{ .RelPermalink }}">Read More</a></span></div>
+      </div>
+
+      {{ end }}
+  {{ end }} 
+    </div>
+ 
+  </div>
+
+  
+  <div class="smallspacer">&nbsp;</div>
+</div>
+
+  {{ partial "wines/wine-list-footnotes" . }}
+
+  <div class="smallspacer">&nbsp;</div>
+  {{ end }}
+  {{/* {{ end }} */}}

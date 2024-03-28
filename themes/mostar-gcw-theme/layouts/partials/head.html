@@ -36,11 +36,11 @@
 
     
     <!-- Local Css -->
- <link rel="stylesheet" href="{{"./css/bootstrap.css" | relURL}}" type="text/css" >
-    <link rel="stylesheet" href="{{"./css/licensing.css" | relURL}}" type="text/css" >
+    <link rel="stylesheet" href="{{"./css/bootstrap.css" | relURL}}" type="text/css" >
     <link rel="stylesheet" href="{{"./css/structure.css"  | relURL}}" type="text/css" >
     <link rel="stylesheet" href="{{"./css/instagramfeed.css" | relURL}}" type="text/css" >
     <link rel="stylesheet" href="{{"./css/AsposePtyLtdMenu.css" | relURL}}" type="text/css" >
+    <link rel="stylesheet" href="{{"./css/pirathon_menu.css" | relURL}}" type="text/css" >
     <link rel="stylesheet" href="{{"./css/common.css" | relURL}}" type="text/css" >
     <link rel="stylesheet" href="{{"./css/gaelic.css" | relURL }}" type="text/css" >
     
@@ -77,4 +77,22 @@
         }
       });</script>
 
-    
+
+
+      <script>
+        $(function () {
+          // Function to toggle submenu visibility
+          function toggleSubmenu() {
+            $(this).find('a').toggleClass('openmenu');
+          }
+      
+          // Toggle submenu when clicking on parent menu item
+          $('.topheadermenus > li').click(toggleSubmenu);
+      
+          // Toggle mobile menu
+          $("#mobile-button").click(function () {
+            $("#theader").toggleClass("topbutton");
+          });
+        });
+      </script>
+
