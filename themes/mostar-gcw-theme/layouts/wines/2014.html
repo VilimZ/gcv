@@ -7,6 +7,7 @@
 {{ $edityear := .Site.Params.yearofediting }}
 {{ $posts := (where .Site.RegularPages "Params.year" "==" .Params.type ) }}
 {{ $postCount := len $posts }}
+<div class="container">&nbsp;</div>
 <div class="container">
   {{ if le $postCount 3 }}
   <div class="row">
@@ -29,8 +30,8 @@
 
         <a class="pir-link" href="{{ .RelPermalink }}"> <img class="pir-range" src="{{ .Params.imagemain }}"
             alt="GCV Premium Shiraz" height="300"></a>
-        <h3 class="text-center">{{ .Params.maintitle }}</h3>
-        <p class="text-left">{{ .Params.testemonialonyears }}</p>
+        <h3 class="text-center" style="min-height: 55px;">{{ .Params.maintitle }}</h3>
+        <p class="text-left" style="min-height: 150px;">{{ .Params.testemonialonyears }}</p>
         <p>&nbsp;</p>
         {{/*  <h5>{{ .Params.productId }}</h5>  */}}
 
@@ -63,8 +64,8 @@
 
         <a class="pir-link" href="{{ .RelPermalink }}"> <img class="pir-range" src="{{ .Params.imagemain }}"
             alt="GCV Premium Shiraz" height="300"></a>
-        <h3 class="text-center">{{ .Params.maintitle }}</h3>
-        <p class="text-left">{{ .Params.testemonialonyears }}</p>
+        <h3 class="text-center" style="min-height: 55px;">{{ .Params.maintitle }}</h3>
+        <p class="text-left" style="min-height: 150px;">{{ .Params.testemonialonyears }}</p>
         <p>&nbsp;</p>
 
         <div id="price-container" class="text-center">

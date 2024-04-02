@@ -1,5 +1,5 @@
 +++
-layout = '2012'
+layout = '2019'
 type = '2012'
 title = '2012 Vintage - Wines - Gaelic Cemetery Vineyard'
 vintagetitle = '2012 Vintage'

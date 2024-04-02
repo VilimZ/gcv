@@ -28,6 +28,7 @@
 {{ $posts := (where .Site.RegularPages "Params.year" "=="  "2010" ) }}
 {{ $postCount := len $posts }}
 
+<div class="container">&nbsp;</div>
 
 <div class="container">{{/* {{println $postCount "X"  }} */}}
   <div class="row">
@@ -50,6 +51,8 @@
 
   </div>
 </div>
+
+<div class="container">&nbsp;</div>
 
 <div class="container-fluid bg-white singleproduct">&nbsp;&nbsp;
   <div class="container">

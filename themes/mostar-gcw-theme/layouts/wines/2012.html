@@ -28,6 +28,7 @@
 {{ $posts := (where .Site.RegularPages "Params.year" "=="  "2012" ) }}
 {{ $postCount := len $posts }}
 
+<div class="container">&nbsp;</div>
 
 <div class="container">{{/* {{println $postCount "X"  }} */}}
   <div class="row">
@@ -40,7 +41,7 @@
       <a class="pir-link" href="{{ .RelPermalink }}"> <img class="pir-range" src="{{ .Params.imagemain }}"
           alt="GCV Premium Shiraz" height="300"></a>
       <h3 class="text-center">{{ .Params.maintitle }}</h3>
-      <p class="text-left">{{ .Params.testemonialonyears }}</p>
+      <p class="text-left" style="min-height: 140px;">{{ .Params.testemonialonyears }}</p>
       <p>&nbsp;</p>
       <div class="text-center"><span class="prod-btn"><a class="btn btn-primary prod-btn-wd"
             href="{{ .RelPermalink }}">Read More</a></span></div>
@@ -50,6 +51,9 @@
 
   </div>
 </div>
+
+<div class="container">&nbsp;</div>
+
 
 <div class="container-fluid bg-white singleproduct">&nbsp;&nbsp;
   <div class="container">
